@@ -15,8 +15,8 @@ const Slider = () => {
             <div className="w-full pb-24">
                 <div className="flex absolute left-0 animate-marquee-infinite">
                 <div className="flex w-96 justify-around">
-                {sliderLogo.map((item: { id: string; src: string }) => (
-                       <img src={item.src} width={200} className='border mx-8 rounded-lg'/>
+                {sliderLogo.map((item) => (
+                       <img key={item.id} src={item.src} width={200} className='border mx-8 rounded-lg'/>
                       ))}
                 </div>
                 </div>

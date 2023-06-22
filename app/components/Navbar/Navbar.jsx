@@ -27,7 +27,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              {navData.map((item: { id: number; title: string }) => (
+              {navData.map((item) => (
                 <button key={item.id} className={styles.butt_nav}>
                   {item.title}
                 </button>
@@ -49,7 +49,7 @@ const Navbar = () => {
       </div>
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center">
-          {navData.map((item: { id: number; title: string }) => (
+          {navData.map((item) => (
             <button key={item.id} className={styles.butt_nav}>
               {item.title}
             </button>

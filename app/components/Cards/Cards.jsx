@@ -43,7 +43,7 @@ const Cards = () => {
             <p className="lg:w-1/2 w-full text-gray-500">We are trusted by the best brands in the country</p>
           </div>
           <div className="flex flex-wrap">
-            {cardData.map((item: { id: number; title: string; body: string; color: string }) => (
+            {cardData.map((item) => (
               <div key={item.id} className="lg:w-1/2 w-full p-4">
                 <div className={`${item.color} p-6 rounded-lg transition-transform transform hover:scale-110 hover:shadow-lg hover:bg-white`}>
                   <div className="p-4 md:w-full flex md:flex-row flex-col">

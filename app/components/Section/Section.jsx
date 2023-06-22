@@ -50,7 +50,7 @@ const Section = () => {
         </div>
         <div className="flex flex-wrap flex-wrap lg:py-6 -mb-10 lg:w-2/3 lg:pl-12 lg:text-left text-center">
           <div className="grid grid-cols-2 gap-10">
-            {sectionData.map((item: { id: number; title: string; body: string }) => (
+            {sectionData.map((item) => (
               <div className="flex flex-wrap mb-10 lg:items-start items-center" key={item.id}>
                 <div className="pb-4 justify-center mx-auto lg:mx-0">
                   <Image src="/dummy.jpg" alt="#" width={100} height={100} />
